@@ -30,5 +30,5 @@ else {
         }
     }
 }
-
+whoTurn.innerText = "Black's Turn"
 }
