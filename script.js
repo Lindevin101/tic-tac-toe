@@ -61,7 +61,7 @@ function doThis() {
 
 function reset() {
   for (let i = 0; i < Box.length; i++){
-    Box[i].style.backgroundColor = "#ffff3"
+    Box[i].style.backgroundColor = "#d8ffc2"
   }
   possibilites = [["a1", "a2", "a3"], ["b1", "b2", "b3"], ["c1", "c2", "c3"], ["c1", "b2", "a3"], ["a1", "b2", "c3"], ["a1", "b1", "c1"], ["a2", "b2", "c2"], ["a3", "b3", "c3"]]
   for (let i = 0; i < Box.length; i++){
