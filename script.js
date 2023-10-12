@@ -31,4 +31,30 @@ else {
     }
 }
 whoTurn.innerText = "Black's Turn"
+checkWin()
+player = 0
+}
+function checkWin () {
+    counter  = 0
+    for (let i = 0; i < possibilites.length; i++) {
+        if (possibilites[i][0] === "black" && possibilites[i][1] = "black" && possibilites[1][2]=== "black") {
+            modelContent.innerText = "Black Wins"
+            ToggleModel()
+        }
+        if (possibilites[i][0] === "green" && possibilites[i][1] = "green" && possibilites[1][2]=== "black") {
+            modelContent.innerText = "Green Wins"
+            ToggleModel()
+        }
+    }
+    for (let i = 0; i < Box.length; i++) {
+        if (Box[i].dataset.type === "clicked") {
+            counter++
+        }
+        if(counter===9) {
+            modal.Content.innerText = "Its a Tie"
+            counter = 0
+            ToggleModel()
+        }
+    }
+
 }
